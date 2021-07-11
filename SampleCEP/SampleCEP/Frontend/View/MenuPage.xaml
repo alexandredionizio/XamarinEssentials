@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SampleCEP.Frontend.View.MenuPage">
+    <ContentPage.Content>
+        <ScrollView>
+            
+            <TableView>
+                <TableRoot>
+                    
+                    <TableSection Title="Xamarin Essentials">
+                        <ViewCell>
+                            <Button x:Name="buttonConnectivity" 
+                                    Text="Teste de Conexão"                            
+                                    Clicked="buttonConnectivity_Clicked"/>       
+                        </ViewCell>
+                        <ViewCell>
+                            <Button x:Name="buttonVibration" 
+                                    Text="Teste de Vibração"                            
+                                    Clicked="buttonVibration_Clicked"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <Button x:Name="buttonCamera"
+                                    Text="Camera"
+                                    Clicked="buttonCamera_Clicked"/>
+                        </ViewCell>
+                        <ViewCell>
+                            <Button x:Name="buttonGeo"
+                                    Text="Geo"
+                                    Clicked="buttonGeo_Clicked"/>
+                        </ViewCell>
+                    </TableSection>
+                    
+                    <TableSection Title="Others">
+                        <ViewCell>
+                            <Button x:Name="buttonCrudCep" 
+                                    Text="Crud Cep"
+                                    Clicked="buttonCrudCep_Clicked"/>
+                        </ViewCell>
+                    </TableSection>
+                    
+                    <TableSection Title="Version">
+                        <TextCell x:Name="textVersion"></TextCell>
+                    </TableSection>
+
+                </TableRoot>
+            </TableView>
+            
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

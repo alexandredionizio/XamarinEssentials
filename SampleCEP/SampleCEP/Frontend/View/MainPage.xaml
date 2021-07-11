@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SampleCEP.MainPage">
+    <ScrollView>
+    <StackLayout Margin="10,0" BackgroundColor="Aqua">
+        <!-- Place new controls here -->
+        <Label Text="Bem Vindo ao Xamarin.Forms !" 
+           HorizontalOptions="Center"
+           VerticalOptions="Start"
+           Margin="0,10"/>
+        
+        <Entry x:Name="etCep"
+            Placeholder="Digite seu Cep"
+               Margin="0,40,0,20"/>
+        
+        <Button x:Name="btnBuscarEndereco" 
+                Text="Buscar Endereço" 
+                Clicked="btnBuscarEndereco_Clicked" />
+
+        <Entry x:Name="etFiltroIdCep"
+            Placeholder="Digite um filtro cep para buscar"
+               Margin="0,40,0,20"/>
+
+        <Button x:Name="btnBuscarCepBanco" 
+                Text="Buscar Cep Banco" 
+                Clicked="btnBuscarCepBanco_Clicked" />
+
+        <Entry x:Name="etId"
+            Placeholder="Digite o Id do Cep"
+               Margin="0,40,0,20"/>
+
+        <Button x:Name="btnExcluiCep" 
+                Text="Apagar Cep" 
+                Clicked="btnExcluiCep_Clicked" />
+
+        <Entry x:Name="etComplemento"
+            Placeholder="Complemento do cep"
+               Margin="0,40,0,20"/>
+
+        <Button x:Name="btnEditaCep" 
+                Text="Edita Cep" 
+                Clicked="btnEditaCep_Clicked" />
+    </StackLayout>
+    </ScrollView>
+</ContentPage>

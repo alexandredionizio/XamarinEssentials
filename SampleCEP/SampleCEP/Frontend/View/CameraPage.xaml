@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Title="Camera"
+             x:Class="SampleCEP.Frontend.View.CameraPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button x:Name="buttonCamera" Text="Chamar Camera" Clicked="buttonCamera_Clicked"/>
+                <Button x:Name="buttonEscolherFoto" Text="Escolher Foto" Clicked="buttonEscolherFoto_Clicked"/>
+                <Label Text="Galeria" Margin="10,20"/>
+                <Image x:Name="imageGaleria" Aspect="AspectFit" 
+                       HeightRequest="200" WidthRequest="200"/>
+
+                <Label Text="Interno" Margin="10,20"/>
+                <Image x:Name="imageInterno" Aspect="AspectFill"
+                       HeightRequest="200" WidthRequest="200" />
+
+                <Label Text="Array" Margin="10,20"/>
+                <Image x:Name="imageArray" Aspect="Fill"
+                       HeightRequest="200" WidthRequest="200" />
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
